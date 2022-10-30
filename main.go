@@ -35,7 +35,7 @@ func (rw RandomWalk) Walk() {
 		// for every iteration
 		x, y := 0, 0
 		for step := 0; step < rw.length; step++ {
-			// fmt.Println(x, y, choices[rand.Intn(len(choices))])
+			fmt.Println(x, y, choices[rand.Intn(len(choices))])
 			choice := choices[rand.Intn(len(choices))]
 			x += choice[0]
 			y += choice[1]
